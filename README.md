@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @NaqiuddinKamal
 - 👀 I’m interested in sales, marketing and oil and gas industry
 - 🌱 I’m currently learning ETL, Machine Learning
-- 💞️ I’m looking to collaborate on data visulaizatiom, data cleaning and data analysis
+- 💞️ I’m looking to collaborate on data visualization, data cleaning and data analysis
 - 📫 How to reach me : naqiuddinkamal.work@gmail.com
 
 <!---

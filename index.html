@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Naqiuddin Kamal — Digital Marketing × Data × AI Automation</title>
+  <meta name="description" content="Portfolio of Naqiuddin Kamal — performance marketing, analytics, AI automation, SEO/AEO/GEO and practical digital systems." />
+  <meta property="og:title" content="Naqiuddin Kamal — Digital Marketing × Data × AI Automation" />
+  <meta property="og:description" content="Performance marketing at the core, strengthened by analytics, automation, web building and practical AI orchestration." />
+  <meta name="theme-color" content="#0b0d10" />
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --panel:#11151a;
+      --panel-2:#151a20;
+      --text:#f4f7fa;
+      --muted:#9ea9b5;
+      --line:#252c34;
+      --accent:#c8ff5b;
+      --accent-2:#6ee7ff;
+      --max:1160px;
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at 75% 10%,rgba(110,231,255,.08),transparent 28%),
+        radial-gradient(circle at 15% 20%,rgba(200,255,91,.06),transparent 25%),
+        var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.55;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .eyebrow{
+      font-size:.78rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:var(--accent);
+      font-weight:700;
+    }
+    nav{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:blur(18px);
+      background:rgba(11,13,16,.78);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    nav .wrap{height:66px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.02em}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:.9rem}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:104px 0 64px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.6fr);gap:54px;align-items:end}
+    h1{
+      margin:14px 0 20px;
+      font-size:clamp(3.3rem,8vw,7.6rem);
+      line-height:.92;
+      letter-spacing:-.065em;
+      font-weight:850;
+      max-width:980px;
+    }
+    .hero p{max-width:720px;font-size:clamp(1.05rem,2vw,1.35rem);color:var(--muted)}
+    .hero strong{color:var(--text)}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{
+      border:1px solid var(--line);
+      padding:12px 18px;border-radius:999px;
+      font-weight:700;font-size:.92rem;
+      display:inline-flex;align-items:center;gap:8px;
+      transition:.2s ease;
+    }
+    .btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-card{
+      border:1px solid var(--line);background:linear-gradient(180deg,var(--panel-2),var(--panel));
+      border-radius:var(--radius);padding:26px;
+    }
+    .hero-card .mini{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+    .stack{display:grid;gap:10px}
+    .stack-row{
+      padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.025);
+      border:1px solid rgba(255,255,255,.05);font-size:.92rem
+    }
+    .stack-row b{display:block;margin-bottom:2px}
+    section{padding:84px 0}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}
+    .section-head h2{
+      margin:8px 0 0;font-size:clamp(2rem,4vw,4.2rem);line-height:1;letter-spacing:-.045em
+    }
+    .section-head p{max-width:540px;color:var(--muted);margin:0}
+    .projects{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .project{
+      position:relative;overflow:hidden;
+      border:1px solid var(--line);border-radius:var(--radius);
+      background:linear-gradient(180deg,var(--panel-2),var(--panel));
+      min-height:330px;padding:26px;
+      display:flex;flex-direction:column;justify-content:space-between;
+      transition:.2s ease;
+    }
+    .project:hover{transform:translateY(-3px);border-color:#3b4652}
+    .project:nth-child(1){grid-column:span 7}
+    .project:nth-child(2){grid-column:span 5}
+    .project:nth-child(3){grid-column:span 5}
+    .project:nth-child(4){grid-column:span 7}
+    .project::after{
+      content:"";position:absolute;width:260px;height:260px;border-radius:50%;
+      right:-100px;top:-100px;background:radial-gradient(circle,rgba(200,255,91,.13),transparent 70%);pointer-events:none
+    }
+    .tag{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:800}
+    .project h3{font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.05;letter-spacing:-.04em;margin:12px 0}
+    .project p{color:var(--muted);max-width:560px;margin:0}
+    .project-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+    .chip{font-size:.76rem;color:#c9d2dc;border:1px solid var(--line);border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.02)}
+    .proof{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px
+    }
+    .proof-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:rgba(255,255,255,.02)}
+    .proof-card .n{font-size:1.5rem;font-weight:850;letter-spacing:-.04em}
+    .proof-card .k{font-size:.82rem;color:var(--muted);margin-top:4px}
+    .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .cap{border-top:1px solid var(--line);padding-top:18px}
+    .cap h3{margin:0 0 8px;font-size:1rem}
+    .cap p{margin:0;color:var(--muted);font-size:.94rem}
+    .principles{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    .quote{
+      border:1px solid var(--line);border-radius:var(--radius);padding:30px;
+      background:linear-gradient(145deg,rgba(200,255,91,.06),rgba(110,231,255,.025));
+      font-size:clamp(1.45rem,3vw,2.7rem);line-height:1.12;letter-spacing:-.04em
+    }
+    .principle-list{display:grid;gap:12px}
+    .principle-item{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--panel)}
+    .principle-item b{display:block;margin-bottom:4px}
+    .principle-item span{color:var(--muted);font-size:.9rem}
+    footer{padding:54px 0 70px;border-top:1px solid var(--line)}
+    .footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:end}
+    .footer-grid h2{font-size:clamp(2rem,6vw,5rem);letter-spacing:-.055em;line-height:.98;margin:8px 0 0}
+    .small{color:var(--muted);font-size:.85rem}
+    @media(max-width:900px){
+      .hero-grid,.principles{grid-template-columns:1fr}
+      .project:nth-child(n){grid-column:span 12}
+      .proof{grid-template-columns:repeat(2,1fr)}
+      .cap-grid{grid-template-columns:1fr}
+      .section-head{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:640px){
+      .wrap{width:min(100% - 28px,var(--max))}
+      .navlinks{display:none}
+      .hero{padding-top:74px}
+      h1{font-size:clamp(3rem,17vw,5rem)}
+      .proof{grid-template-columns:1fr 1fr}
+      .footer-grid{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#">Naqiuddin<span>.</span></a>
+      <div class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#principles">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Digital Marketing × Data × AI Automation</div>
+          <h1>I build systems that make marketing work better.</h1>
+          <p>
+            Performance marketing is the core. I strengthen it with <strong>analytics, automation,
+            web building, SEO/AEO/GEO and practical AI orchestration</strong> — so decisions get
+            faster, clearer and more measurable.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">View selected work →</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <div class="mini">What I work across</div>
+          <div class="stack">
+            <div class="stack-row"><b>Performance Marketing</b>Meta Ads, Google Search, optimisation, creative testing</div>
+            <div class="stack-row"><b>Marketing Intelligence</b>GA4, tracking, dashboards, decision-support reporting</div>
+            <div class="stack-row"><b>AI & Automation</b>Agentic workflows, orchestration, practical operational systems</div>
+            <div class="stack-row"><b>Web & Search</b>Static sites, SEO, AEO, GEO, conversion architecture</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2>Proof over tool lists.</h2>
+          </div>
+          <p>Each project is framed around the problem, what I built or changed, and the evidence that matters.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div>
+              <div class="tag">Active / In Progress</div>
+              <h3>SetiaAlamDental.my</h3>
+              <p>
+                End-to-end local dental growth build: competitor research, information architecture,
+                website development, SEO/AEO/GEO, performance optimisation, analytics and conversion thinking.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span class="chip">Local SEO</span><span class="chip">AEO / GEO</span><span class="chip">Web</span>
+              <span class="chip">Analytics</span><span class="chip">Conversion</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="tag">Performance Marketing</div>
+              <h3>Campaign Operations</h3>
+              <p>
+                Multi-channel paid acquisition work covering campaign structure, tracking diagnostics,
+                budget decisions, creative testing and operational reporting.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span class="chip">Meta Ads</span><span class="chip">Google Ads</span><span class="chip">Measurement</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="tag">Marketing Intelligence</div>
+              <h3>Google Ads + OnPay Monitor</h3>
+              <p>
+                A focused Search monitoring layer combining platform and conversion data to surface
+                rank pressure, CPC movement, conversion quality and decision-ready signals.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span class="chip">Google Ads API</span><span class="chip">OnPay API</span><span class="chip">Dashboard</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div>
+              <div class="tag">Automation / AI</div>
+              <h3>Property Automation + Celik-AI</h3>
+              <p>
+                Practical systems for lead operations and AI education: structured data flows,
+                read-only automation, agentic workflows and search-oriented knowledge publishing.
+              </p>
+            </div>
+            <div class="project-meta">
+              <span class="chip">Automation</span><span class="chip">AI Orchestration</span><span class="chip">Content Systems</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="proof">
+          <div class="proof-card"><div class="n">10+</div><div class="k">paid acquisition channels handled across portfolios</div></div>
+          <div class="proof-card"><div class="n">4</div><div class="k">career lanes: performance, automation, intelligence, AI ops</div></div>
+          <div class="proof-card"><div class="n">API-first</div><div class="k">approach for reporting and workflow reliability</div></div>
+          <div class="proof-card"><div class="n">Case-led</div><div class="k">portfolio structure built around evidence and decisions</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Capabilities</div>
+            <h2>T-shaped, by design.</h2>
+          </div>
+          <p>One core discipline, supported by adjacent skills that make the work more complete.</p>
+        </div>
+        <div class="cap-grid">
+          <div class="cap"><h3>01 — Performance Marketing</h3><p>Campaign architecture, bidding and budgets, creative testing, funnel diagnosis and optimisation.</p></div>
+          <div class="cap"><h3>02 — Analytics & Measurement</h3><p>GA4/GTM, conversion design, dashboards, platform APIs and operational reporting.</p></div>
+          <div class="cap"><h3>03 — AI & Automation</h3><p>Agentic workflows, tool orchestration, cron-style reporting, structured automation and practical AI adoption.</p></div>
+          <div class="cap"><h3>04 — Web & Conversion</h3><p>Static websites, landing-page structure, speed, information architecture and conversion-focused UX.</p></div>
+          <div class="cap"><h3>05 — SEO / AEO / GEO</h3><p>Semantic structure, intent coverage, entity clarity, structured answers and machine-readable context.</p></div>
+          <div class="cap"><h3>06 — Systems Thinking</h3><p>Turning repeated marketing tasks into clearer processes, reusable systems and documented decision rules.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles">
+      <div class="wrap principles">
+        <div class="quote">
+          “The goal isn’t to look technical. The goal is to make the marketing system easier to understand, operate and improve.”
+        </div>
+        <div class="principle-list">
+          <div class="principle-item"><b>Evidence before claims</b><span>Use real outcomes, screenshots, system artefacts and documented decisions.</span></div>
+          <div class="principle-item"><b>Contribution stays clear</b><span>Separate individual work from team outcomes and keep client-sensitive details private.</span></div>
+          <div class="principle-item"><b>AI is infrastructure, not decoration</b><span>Use it where it reduces friction, improves analysis or makes workflows repeatable.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Build better<br/>marketing systems.</h2>
+      </div>
+      <div>
+        <p class="small">Naqiuddin Kamal<br/>Malaysia</p>
+        <p><a class="btn primary" href="mailto:naqiuddin1311@gmail.com">Email me →</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
